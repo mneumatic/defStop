@@ -1,0 +1,27 @@
+@import ../module/variables
+@import ../module/breakpoints
+
+.navbar
+  background-color: #F8F9FA
+  position: fixed
+  top: 0
+  transition: $transition-type-base
+  width: 100%
+  z-index: 3
+
+  @include respond-to('medium')
+    background-color: transparent
+
+  .def-btn,
+  .def-btn-outline
+    margin-top: .5rem
+    @include respond-to('large')
+      margin: auto .5rem auto .5rem
+
+
+html:not([data-scroll='0']) .navbar
+  background-color: #F8F9FA
+  box-shadow: $box-shadow
+
+.footbar
+  background-color: #F8F9FA

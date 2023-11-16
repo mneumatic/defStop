@@ -1,0 +1,42 @@
+@import ../module/breakpoints
+@import ../module/variables
+
+.searchbar
+  position: relative
+  padding-top: 5rem !important
+  padding-bottom: 2rem !important
+
+  .filters
+    display: block
+    position: relative
+    align-items: center
+
+    @include respond-to('large')
+      display: flex
+      position: absolute
+
+    button
+      svg
+        margin-bottom: .1rem
+
+    form
+      border: 1px solid $dark-sea-green
+
+      label
+        display: inline-flex
+        align-items: center
+
+        &:nth-child(even)
+          margin: 0 10px
+
+      input
+        margin-right: 5px
+
+  form
+    button:first-child
+        height: auto
+        width: 40px
+
+    input
+      width: auto
+

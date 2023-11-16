@@ -1,0 +1,139 @@
+@import ../module/variables
+@import ../module/breakpoints
+
+html
+  color: #222
+  font-size: 1em
+  line-height: 1.4
+  height: 100%
+
+body
+  font-family: $ff-open-sans
+  overflow-x: hidden
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  height: 100%
+
+::-moz-selection
+  background: #b3d4fc
+  text-shadow: none
+
+::selection
+  background: #b3d4fc
+  text-shadow: none
+
+hr
+  display: block
+  height: 1px
+  border: 0
+  border-top: 1px solid #ccc
+  margin: 1em 0
+  padding: 0
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+  vertical-align: middle
+
+fieldset
+  border: 0
+  margin: 0
+  padding: 0
+
+textarea
+  resize: vertical
+
+.hidden,
+[hidden],
+.sr-only
+  display: none !important
+
+.sr-only
+  border: 0
+  clip: rect(0, 0, 0, 0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  white-space: nowrap
+  width: 1px
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus
+  clip: auto
+  height: auto
+  margin: 0
+  overflow: visible
+  position: static
+  white-space: inherit
+  width: auto
+
+.invisible
+  visibility: hidden
+
+.clearfix::before,
+.clearfix::after
+  content: " "
+  display: table
+
+.clearfix::after
+  clear: both
+
+.drop-shadow
+  filter: drop-shadow($box-shadow-sm-sharp)
+
+.box-shadow-sm-sharp
+  box-shadow: $box-shadow-sm-sharp
+
+.defstop-bg,
+.defstop-bg-2
+  background-image: url("/public/img/lp-bg-2.png")
+  background-attachment: fixed
+  background-size: cover
+  background-position: top
+  background-repeat: no-repeat
+  min-height: 100%
+
+.defstop-bg-2
+  background-image: url("/public/img/lp-bg.png")
+
+.header-span
+  color: $golden-brown
+
+.def-btn-outline
+  border: 1px solid $dark-sea-green
+  transition: $transition-type-base
+
+  &:hover
+    color: #FFFFFF !important
+    background-color: $dark-sea-green !important
+
+.def-btn
+  color: #fff !important
+  background-color: $golden-brown !important
+
+  &:hover
+    color: #FFFFFF !important
+    background-color: $caput-mortuum !important
+
+@include respond-to('medium')
+  .w-lg-25
+    width: 25%
+
+#flash-msg
+  .btn-close
+    filter: invert(1)
+
+  .alert-success
+    color: #fff
+    background-color: $dark-sea-green
+
+  .alert-danger
+    color: #fff
+    background-color: $golden-brown
+
+

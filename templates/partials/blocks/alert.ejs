@@ -1,0 +1,10 @@
+<% if (message.msg.length > 0) { %>
+    <div id="flash-msg" class="container <% if (loggedIn) { %>flash-msg-sm<% } %>">
+        <div class="container w-100 position-absolute" style="top:70px">
+            <div  class="alert alert-<%= message.type %> d-flex justify-content-between" role="alert">
+                <span><%= message.msg %></span>
+                <button class="btn-close ms-3" onclick="document.getElementById('flash-msg').remove()"></button>
+            </div>
+        </div>
+    </div>
+<% } %>
