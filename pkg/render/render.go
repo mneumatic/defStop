@@ -2,8 +2,8 @@ package render
 
 import (
 	"bytes"
-	"github.com/sigewulf/defstop/models"
-	config "github.com/sigewulf/defstop/pkg/configs"
+	"github.com/mneumatic/defstop/models"
+	config "github.com/mneumatic/defstop/pkg/configs"
 	"html/template"
 	"log"
 	"net/http"

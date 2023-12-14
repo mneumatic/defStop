@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	config "github.com/sigewulf/defstop/pkg/configs"
-	"github.com/sigewulf/defstop/pkg/handlers"
-	"github.com/sigewulf/defstop/pkg/render"
+	config "github.com/mneumatic/defstop/pkg/configs"
+	"github.com/mneumatic/defstop/pkg/handlers"
+	"github.com/mneumatic/defstop/pkg/render"
 	"log"
 	"net/http"
 	"os"

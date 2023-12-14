@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	"github.com/sigewulf/defstop/models"
-	config "github.com/sigewulf/defstop/pkg/configs"
-	"github.com/sigewulf/defstop/pkg/render"
+	"github.com/mneumatic/defstop/models"
+	config "github.com/mneumatic/defstop/pkg/configs"
+	"github.com/mneumatic/defstop/pkg/render"
 	"net/http"
 )
 
